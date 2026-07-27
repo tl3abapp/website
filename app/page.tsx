@@ -44,6 +44,9 @@ export default function Home() {
           <a href="#features">المميزات</a>
           <Link href="/privacy">الخصوصية</Link>
           <Link href="/support">الدعم</Link>
+          <Link className="language-switch" href="/en" lang="en">
+            English
+          </Link>
         </div>
       </nav>
 
@@ -196,6 +199,9 @@ export default function Home() {
           <Link href="/privacy">الخصوصية</Link>
           <Link href="/terms">الشروط</Link>
           <Link href="/support">الدعم</Link>
+          <Link href="/en" lang="en">
+            English
+          </Link>
         </div>
         <p>© 2026 تلعب. جميع الحقوق محفوظة.</p>
       </footer>

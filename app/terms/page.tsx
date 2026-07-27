@@ -23,6 +23,9 @@ export default function TermsPage() {
           <Link href="/">الرئيسية</Link>
           <Link href="/privacy">الخصوصية</Link>
           <Link href="/support">الدعم</Link>
+          <Link className="language-switch" href="/en/terms" lang="en">
+            English
+          </Link>
         </div>
       </nav>
 

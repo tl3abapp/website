@@ -43,11 +43,30 @@ test("server-renders the TL3B home page", async () => {
   assert.doesNotMatch(html, /Codex is building|react-loading-skeleton/i);
 });
 
+test("server-renders the English TL3B home page", async () => {
+  const response = await render("/en");
+  assert.equal(response.status, 200);
+  assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
+
+  const html = await response.text();
+  assert.match(html, /Organize your match/);
+  assert.match(html, /Privacy Policy/);
+  assert.match(html, /العربية/);
+  assert.match(html, /\/en\/privacy/);
+  assert.match(html, /\/en\/terms/);
+  assert.match(html, /\/en\/support/);
+  assert.match(html, /tl3b-full-logo\.png/);
+  assert.doesNotMatch(html, /Codex is building|react-loading-skeleton/i);
+});
+
 test("server-renders release policy pages", async () => {
   const pages = [
     ["/privacy", /سياسة الخصوصية/, /حذف الحساب والبيانات/],
     ["/terms", /شروط الاستخدام/, /المباريات والسلامة/],
     ["/support", /راسل support@til3b\.com/, /طريقة حذف الحساب/],
+    ["/en/privacy", /Privacy Policy/, /Account and data deletion/],
+    ["/en/terms", /Terms of Use/, /Matches and safety/],
+    ["/en/support", /Email support@til3b\.com/, /Delete account/],
   ];
 
   for (const [path, heading, content] of pages) {

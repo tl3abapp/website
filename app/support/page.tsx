@@ -38,6 +38,9 @@ export default function SupportPage() {
           <Link href="/">الرئيسية</Link>
           <Link href="/privacy">الخصوصية</Link>
           <Link href="/terms">الشروط</Link>
+          <Link className="language-switch" href="/en/support" lang="en">
+            English
+          </Link>
         </div>
       </nav>
 

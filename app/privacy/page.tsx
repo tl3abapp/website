@@ -133,6 +133,9 @@ function LegalNav() {
         <Link href="/">الرئيسية</Link>
         <Link href="/terms">الشروط</Link>
         <Link href="/support">الدعم</Link>
+        <Link className="language-switch" href="/en/privacy" lang="en">
+          English
+        </Link>
       </div>
     </nav>
   );
