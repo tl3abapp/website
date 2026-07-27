@@ -33,7 +33,7 @@ test("server-renders the TL3B home page", async () => {
   const html = await response.text();
   assert.match(html, /<html lang="ar" dir="rtl">/i);
   assert.match(html, /<title>تلعب\؟ \| تنظيم مباريات البادل<\/title>/i);
-  assert.match(html, /رتب مباراتك، ادع ربعك/);
+  assert.match(html, /رتب مباراتك، ادع أصدقائك/);
   assert.match(html, /سياسة الخصوصية/);
   assert.match(html, /طريقة حذف الحساب/);
   assert.match(html, /\/privacy/);
