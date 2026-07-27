@@ -15,23 +15,23 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://tl3b.app"),
   title: {
-    default: "TL3B? | Padel Match Organizer",
-    template: "%s | TL3B?",
+    default: "تلعب؟ | تنظيم مباريات البادل",
+    template: "%s | تلعب؟",
   },
   description:
-    "Official website for TL3B, the padel match organizing app for creating games, inviting players, and managing match updates.",
+    "الموقع الرسمي لتطبيق تلعب لتنظيم مباريات البادل، دعوة اللاعبين، إدارة الطلبات، وسياسة الخصوصية والدعم.",
   openGraph: {
-    title: "TL3B? | Padel Match Organizer",
+    title: "تلعب؟ | تنظيم مباريات البادل",
     description:
-      "Create padel games, invite friends and circles, manage requests, and keep players updated.",
-    siteName: "TL3B?",
+      "سو مباريات بادل، ادع الأصدقاء والسيركل، تابع الطلبات، ووصل التحديثات للمشاركين.",
+    siteName: "تلعب؟",
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "TL3B? | Padel Match Organizer",
+    title: "تلعب؟ | تنظيم مباريات البادل",
     description:
-      "Create padel games, invite friends and circles, manage requests, and keep players updated.",
+      "سو مباريات بادل، ادع الأصدقاء والسيركل، تابع الطلبات، ووصل التحديثات للمشاركين.",
   },
   icons: {
     icon: "/tl3b-icon.png",
@@ -46,7 +46,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ar" dir="rtl">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

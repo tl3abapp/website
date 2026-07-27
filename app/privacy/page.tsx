@@ -2,9 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Privacy Policy | TL3B",
-  description:
-    "Privacy Policy for TL3B, the padel match organizing application.",
+  title: "سياسة الخصوصية | تلعب",
+  description: "سياسة الخصوصية لتطبيق تلعب لتنظيم مباريات البادل.",
 };
 
 export default function PrivacyPage() {
@@ -12,95 +11,102 @@ export default function PrivacyPage() {
     <main>
       <LegalNav />
       <article className="legal-page">
-        <p className="eyebrow">Last updated July 26, 2026</p>
-        <h1>Privacy Policy</h1>
+        <p className="eyebrow">آخر تحديث: ٢٧ يوليو ٢٠٢٦</p>
+        <h1>سياسة الخصوصية</h1>
         <p className="legal-lead">
-          TL3B helps players create, discover, join, and manage padel matches.
-          This policy explains what information we collect and how we use it.
+          تلعب يساعد اللاعبين على إنشاء مباريات البادل، دعوة اللاعبين، إدارة
+          الطلبات، واستلام التنبيهات. هذه السياسة توضح نوع البيانات التي نجمعها
+          وكيف نستخدمها.
         </p>
 
         <section>
-          <h2>Information we collect</h2>
+          <h2>البيانات التي نجمعها</h2>
           <p>
-            We may collect account information such as your name, handle, email,
-            phone number, birth date, profile photo, selected area, skill level,
-            friends, circle relationships, match activity, community posts,
-            chat messages, notifications, and support requests.
+            قد نجمع بيانات الحساب مثل الاسم، اسم المستخدم، البريد الإلكتروني،
+            رقم الهاتف، تاريخ الميلاد، صورة الملف الشخصي، المنطقة المختارة،
+            مستوى اللعب، الأصدقاء، السيركل، نشاط المباريات، المنشورات، الرسائل،
+            الإشعارات، وطلبات الدعم.
           </p>
           <p>
-            If you upload a court booking image or profile photo, that image is
-            stored so it can be shown in the app where you choose to share it.
-          </p>
-        </section>
-
-        <section>
-          <h2>Location and match areas</h2>
-          <p>
-            TL3B uses area-level information, such as Kuwait City or Salmiya, to
-            help players find relevant games. We do not publish your personal
-            account area to other players as a public profile location by
-            default. Public games you create may display the game area because
-            players need to know where the match is taking place.
+            إذا رفعت صورة حجز الملعب أو صورة شخصية، يتم حفظ الصورة حتى تظهر في
+            المكان الذي اخترت مشاركتها فيه داخل التطبيق.
           </p>
         </section>
 
         <section>
-          <h2>How we use information</h2>
+          <h2>الموقع والمناطق</h2>
           <p>
-            We use information to create and manage accounts, show matches,
-            send invitations and notifications, process join requests, support
-            chat and community features, improve safety, prevent misuse, and
-            provide customer support.
+            يستخدم تلعب معلومات على مستوى المنطقة، مثل مدينة الكويت أو السالمية،
+            لمساعدة اللاعبين على العثور على مباريات مناسبة. لا ننشر منطقة حسابك
+            الشخصية للناس كموقع عام افتراضيًا. المباريات العامة التي تنشئها قد
+            تعرض منطقة المباراة لأن اللاعبين يحتاجون معرفة مكان اللعب.
           </p>
         </section>
 
         <section>
-          <h2>Sharing</h2>
+          <h2>كيف نستخدم البيانات</h2>
           <p>
-            Match hosts and participants may see information needed to manage a
-            game, such as display name, handle, game status, and join request
-            status. Public games may be visible to users in the app. Private,
-            friend, circle, and selected-player games are shown based on the
-            audience chosen by the host.
-          </p>
-          <p>
-            We do not sell your personal information. We may share information
-            only when needed to operate the service, comply with law, protect
-            users, or handle business and infrastructure providers.
+            نستخدم البيانات لإنشاء الحسابات، عرض المباريات، إرسال الدعوات
+            والتنبيهات، معالجة طلبات الانضمام، تشغيل المحادثات والمنشورات،
+            تحسين الأمان، منع إساءة الاستخدام، وتقديم الدعم.
           </p>
         </section>
 
         <section>
-          <h2>Notifications</h2>
+          <h2>مشاركة البيانات</h2>
           <p>
-            If you allow notifications, TL3B may send alerts about invitations,
-            join approvals, match updates, chat activity, and match reminders.
-            You can control notification permissions from your device settings.
+            قد يرى الهوست والمشاركون معلومات ضرورية لإدارة المباراة، مثل اسم
+            العرض، اسم المستخدم، حالة الانضمام، وتفاصيل المباراة. المباريات
+            العامة قد تظهر لمستخدمي التطبيق. أما مباريات الأصدقاء، السيركل،
+            واللاعبين المحددين فتظهر حسب الجمهور الذي يختاره الهوست.
+          </p>
+          <p>
+            لا نبيع بياناتك الشخصية. قد نشارك البيانات فقط لتشغيل الخدمة،
+            الالتزام بالقانون، حماية المستخدمين، أو التعامل مع مزودي البنية
+            التقنية.
           </p>
         </section>
 
         <section>
-          <h2>Data retention and deletion</h2>
+          <h2>الإشعارات</h2>
           <p>
-            We keep account and match information while your account is active
-            or as needed to provide the service. You can request account
-            deletion or contact support for help with your data.
+            إذا سمحت بالإشعارات، قد يرسل تلعب تنبيهات عن الدعوات، قبول
+            الانضمام، تعديل وقت المباراة، المحادثات، والتذكير قبل وقت المباراة.
+            يمكنك التحكم بإذن الإشعارات من إعدادات جهازك.
           </p>
         </section>
 
         <section>
-          <h2>Children</h2>
+          <h2>حذف الحساب والبيانات</h2>
           <p>
-            TL3B is not intended for children under 13. If you believe a child
-            has provided personal information, contact us so we can review and
-            remove it where appropriate.
+            يمكنك حذف حسابك من داخل التطبيق عبر: الملف الشخصي، ثم الإعدادات، ثم
+            الحساب، ثم حذف الحساب. بعد تأكيد الطلب يتم تعطيل الحساب وبدء معالجة
+            حذف البيانات المرتبطة به.
+          </p>
+          <p>
+            إذا لم تستطع الدخول للتطبيق، أرسل طلب حذف الحساب إلى{" "}
+            <a href="mailto:support@tl3ab.app">support@tl3ab.app</a> من البريد
+            المسجل في حسابك، مع كتابة اسم المستخدم أو رقم الهاتف المرتبط بالحساب
+            حتى نتمكن من التحقق من الطلب.
+          </p>
+          <p>
+            قد نحتفظ ببعض البيانات لفترة محدودة إذا كان ذلك مطلوبًا لأسباب
+            قانونية، أمنية، منع إساءة الاستخدام، أو سجلات تشغيل الخدمة.
           </p>
         </section>
 
         <section>
-          <h2>Contact</h2>
+          <h2>الأطفال</h2>
           <p>
-            For privacy questions, contact TL3B support at{" "}
+            تطبيق تلعب غير مخصص للأطفال دون ١٣ سنة. إذا كنت تعتقد أن طفلًا قدم
+            بيانات شخصية، تواصل معنا حتى نراجع الطلب ونحذف البيانات عند الحاجة.
+          </p>
+        </section>
+
+        <section>
+          <h2>التواصل</h2>
+          <p>
+            لأي سؤال بخصوص الخصوصية أو حذف البيانات، تواصل معنا عبر{" "}
             <a href="mailto:support@tl3ab.app">support@tl3ab.app</a>.
           </p>
         </section>
@@ -111,15 +117,15 @@ export default function PrivacyPage() {
 
 function LegalNav() {
   return (
-    <nav className="site-nav legal-nav" aria-label="Main navigation">
+    <nav className="site-nav legal-nav" aria-label="التنقل الرئيسي">
       <Link className="brand-link" href="/">
-        <Image src="/tl3b-icon.png" width={48} height={48} alt="TL3B app icon" />
-        <span>TL3B?</span>
+        <Image src="/tl3b-icon.png" width={48} height={48} alt="أيقونة تلعب" />
+        <span>تلعب؟</span>
       </Link>
       <div className="nav-links">
-        <Link href="/">Home</Link>
-        <Link href="/terms">Terms</Link>
-        <Link href="/support">Support</Link>
+        <Link href="/">الرئيسية</Link>
+        <Link href="/terms">الشروط</Link>
+        <Link href="/support">الدعم</Link>
       </div>
     </nav>
   );

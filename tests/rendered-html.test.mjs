@@ -31,21 +31,24 @@ test("server-renders the TL3B home page", async () => {
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
-  assert.match(html, /<title>TL3B\? \| Padel Match Organizer<\/title>/i);
-  assert.match(html, /Find the right players and organize your next padel game/);
-  assert.match(html, /View Privacy Policy/);
+  assert.match(html, /<html lang="ar" dir="rtl">/i);
+  assert.match(html, /<title>تلعب\؟ \| تنظيم مباريات البادل<\/title>/i);
+  assert.match(html, /رتب مباراتك، ادع ربعك/);
+  assert.match(html, /سياسة الخصوصية/);
+  assert.match(html, /طريقة حذف الحساب/);
   assert.match(html, /\/privacy/);
   assert.match(html, /\/terms/);
   assert.match(html, /\/support/);
   assert.match(html, /tl3b-icon\.png/);
+  assert.match(html, /tl3b-full-logo\.png/);
   assert.doesNotMatch(html, /Codex is building|react-loading-skeleton/i);
 });
 
 test("server-renders release policy pages", async () => {
   const pages = [
-    ["/privacy", /Privacy Policy/, /Location and match areas/],
-    ["/terms", /Terms of Use/, /Matches and safety/],
-    ["/support", /Email support@tl3ab\.app/, /Official TL3B policy links/],
+    ["/privacy", /سياسة الخصوصية/, /حذف الحساب والبيانات/],
+    ["/terms", /شروط الاستخدام/, /المباريات والسلامة/],
+    ["/support", /راسل support@tl3ab\.app/, /طريقة حذف الحساب/],
   ];
 
   for (const [path, heading, content] of pages) {

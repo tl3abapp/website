@@ -3,125 +3,111 @@ import Link from "next/link";
 
 const features = [
   {
-    title: "Create the right match",
-    text: "Set the area, date, time, player level, privacy, and who can see the game.",
+    title: "إنشاء مباريات بسهولة",
+    text: "حدد المنطقة، التاريخ، الوقت، مستوى اللاعبين، ونوع الدعوة خلال خطوات بسيطة.",
   },
   {
-    title: "Invite your circle",
-    text: "Send games to friends, selected players, or your circle so the right people see it at home.",
+    title: "دعوات للأصدقاء والسيركل",
+    text: "اختر من يشوف المباراة: العامة، الأصدقاء، السيركل، أو لاعبين محددين.",
   },
   {
-    title: "Manage players",
-    text: "Track requests, accepted players, replacements, and match updates from one host view.",
+    title: "إدارة اللاعبين",
+    text: "تابع طلبات الانضمام، اللاعبين المقبولين، التبديل، وتحديثات وقت المباراة.",
   },
   {
-    title: "Stay notified",
-    text: "Get updates for invites, approvals, match changes, and reminders before game time.",
+    title: "تنبيهات مهمة",
+    text: "توصل للمشاركين إشعارات للدعوات، القبول، تعديل الوقت، وتذكير قبل المباراة.",
   },
 ];
 
 const steps = [
-  "Create your profile",
-  "Choose players or make it public",
-  "Share, join, and manage the match",
+  "أنشئ حسابك وحدد منطقتك",
+  "سو مباراة واختر من تدعو",
+  "شارك المباراة وتابع المشاركين",
 ];
 
 export default function Home() {
   return (
     <main>
-      <nav className="site-nav" aria-label="Main navigation">
+      <nav className="site-nav" aria-label="التنقل الرئيسي">
         <Link className="brand-link" href="/">
           <Image
             src="/tl3b-icon.png"
             width={54}
             height={54}
-            alt="TL3B app icon"
+            alt="أيقونة تطبيق تلعب"
             priority
           />
-          <span>TL3B?</span>
+          <span>تلعب؟</span>
         </Link>
         <div className="nav-links">
-          <a href="#features">Features</a>
-          <a href="#privacy">Privacy</a>
-          <Link href="/support">Support</Link>
+          <a href="#features">المميزات</a>
+          <Link href="/privacy">الخصوصية</Link>
+          <Link href="/support">الدعم</Link>
         </div>
       </nav>
 
       <section className="hero-section">
         <div className="hero-copy">
-          <p className="eyebrow">Padel match organizing app</p>
-          <h1>Find the right players and organize your next padel game.</h1>
+          <p className="eyebrow">تطبيق لتنظيم مباريات البادل</p>
+          <h1>رتب مباراتك، ادع ربعك، وخل الملعب يكمل أسرع.</h1>
           <p className="hero-text">
-            TL3B helps players create games, invite friends and circles, manage
-            requests, and keep everyone updated from one simple app.
+            تلعب يساعدك تسوي مباراة بادل، تختار اللاعبين المناسبين، تتابع
+            طلبات الانضمام، وتوصل التحديثات للمشاركين بدون لخبطة القروبات.
           </p>
           <div className="hero-actions">
-            <a className="primary-action" href="#privacy">
-              View Privacy Policy
-            </a>
-            <Link className="secondary-action" href="/support">
-              Contact support
+            <Link className="primary-action" href="/privacy">
+              سياسة الخصوصية
             </Link>
+            <a className="secondary-action" href="#delete-account">
+              طريقة حذف الحساب
+            </a>
           </div>
-          <div className="hero-facts" aria-label="App highlights">
-            <span>Kuwait focused</span>
-            <span>Private circles</span>
-            <span>Match reminders</span>
+          <div className="hero-facts" aria-label="مميزات مختصرة">
+            <span>مناسب للكويت</span>
+            <span>دعوات خاصة</span>
+            <span>تنبيهات للمباريات</span>
           </div>
         </div>
 
-        <div className="hero-visual" aria-label="TL3B app preview">
-          <div className="phone-shell">
-            <div className="phone-status" />
-            <div className="app-top">
-              <Image
-                src="/tl3b-icon.png"
-                width={42}
-                height={42}
-                alt=""
-                aria-hidden="true"
-              />
-              <strong>TL3B?</strong>
-            </div>
-            <div className="welcome-panel">
-              <span>Hi player</span>
-              <strong>Ready for your next match?</strong>
+        <div className="hero-visual" aria-label="هوية تطبيق تلعب">
+          <div className="brand-showcase">
+            <Image
+              src="/tl3b-full-logo.png"
+              width={720}
+              height={720}
+              alt="شعار تلعب"
+              priority
+              className="full-logo"
+            />
+            <div className="mini-app-card">
               <div>
-                <small>Kuwait City</small>
-                <small>3 players nearby</small>
+                <span>مباراة سيركل</span>
+                <strong>بادل المساء</strong>
+                <p>الكويت · ٨:٣٠ م · ٢/٤ لاعبين</p>
               </div>
-            </div>
-            <div className="match-card">
-              <span>MY CIRCLE GAME</span>
-              <h2>Evening Padel</h2>
-              <p>Kuwait City · 8:30 PM · 2/4 players</p>
-              <button>Manage</button>
-            </div>
-            <div className="match-card light">
-              <span>PUBLIC GAME</span>
-              <h2>Open Match</h2>
-              <p>Salmiya · Tomorrow · Request to join</p>
+              <button>إدارة</button>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="section intro-band" aria-label="About TL3B">
+      <section className="section intro-band" aria-label="عن تطبيق تلعب">
         <div>
-          <p className="eyebrow">About</p>
-          <h2>A cleaner way to coordinate padel.</h2>
+          <p className="eyebrow">عن تلعب</p>
+          <h2>طريقة أرتب لتنسيق مباريات البادل.</h2>
         </div>
         <p>
-          TL3B is made for players who want less back-and-forth before a match.
-          Hosts can create games, choose who receives the invite, approve public
-          requests, and keep participants informed when details change.
+          تلعب معمول للاعبين اللي يبون يختصرون الرسائل قبل المباراة. الهوست
+          يقدر يسوي مباراة، يحدد من توصله الدعوة، يقبل طلبات المباريات العامة،
+          ويبلغ المشاركين إذا تغير الوقت أو تفاصيل المباراة.
         </p>
       </section>
 
       <section className="section" id="features">
         <div className="section-heading">
-          <p className="eyebrow">Features</p>
-          <h2>Built around real match flow.</h2>
+          <p className="eyebrow">المميزات</p>
+          <h2>مصمم على طريقة سير المباراة الحقيقية.</h2>
         </div>
         <div className="feature-grid">
           {features.map((feature) => (
@@ -135,8 +121,8 @@ export default function Home() {
 
       <section className="section process-section">
         <div className="section-heading">
-          <p className="eyebrow">How it works</p>
-          <h2>From idea to full court.</h2>
+          <p className="eyebrow">شلون يشتغل</p>
+          <h2>من فكرة المباراة إلى اكتمال اللاعبين.</h2>
         </div>
         <div className="steps">
           {steps.map((step, index) => (
@@ -148,33 +134,48 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section privacy-preview" id="privacy">
+      <section className="section privacy-preview">
         <div>
-          <p className="eyebrow">Privacy first</p>
-          <h2>Your personal area is not public by default.</h2>
+          <p className="eyebrow">الخصوصية</p>
+          <h2>منطقتك الشخصية ما تظهر للناس كعنوان عام.</h2>
           <p>
-            Public games can show the game area so players know where the match
-            is. Your personal account details, private ratings, and account
-            controls are handled separately.
+            مبارياتك العامة قد تعرض منطقة المباراة حتى يعرف اللاعبون وين
+            يلعبون. أما تفاصيل حسابك، تقييماتك الخاصة، وإعداداتك فتتعامل
+            بشكل منفصل داخل التطبيق.
           </p>
         </div>
         <Link className="primary-action compact" href="/privacy">
-          Read full Privacy Policy
+          اقرأ سياسة الخصوصية
+        </Link>
+      </section>
+
+      <section className="section delete-section" id="delete-account">
+        <div>
+          <p className="eyebrow">حذف الحساب</p>
+          <h2>تقدر تطلب حذف حسابك وبياناتك من تلعب.</h2>
+          <p>
+            من داخل التطبيق ادخل على الملف الشخصي، ثم الإعدادات، ثم الحساب،
+            واختر حذف الحساب. إذا ما قدرت تدخل للتطبيق، راسلنا من بريدك
+            المسجل على support@tl3ab.app واكتب طلب حذف الحساب.
+          </p>
+        </div>
+        <Link className="secondary-action compact" href="/support">
+          تفاصيل الدعم
         </Link>
       </section>
 
       <section className="section release-section">
         <Image
-          src="/tl3b-wordmark.png"
-          width={280}
-          height={90}
-          alt="TL3B Arabic wordmark"
+          src="/tl3b-full-logo.png"
+          width={260}
+          height={260}
+          alt="شعار تلعب"
         />
         <div>
-          <h2>TL3B for iOS, Android, and web.</h2>
+          <h2>تلعب على iOS و Android والويب.</h2>
           <p>
-            The official release site for TL3B app information, privacy,
-            support, and store review links.
+            هذا الموقع الرسمي لمعلومات التطبيق، سياسة الخصوصية، شروط
+            الاستخدام، الدعم، وروابط المراجعة الخاصة بالمتاجر.
           </p>
         </div>
       </section>
@@ -182,14 +183,14 @@ export default function Home() {
       <footer className="site-footer">
         <Link className="brand-link footer-brand" href="/">
           <Image src="/tl3b-icon.png" width={42} height={42} alt="" />
-          <span>TL3B?</span>
+          <span>تلعب؟</span>
         </Link>
         <div>
-          <Link href="/privacy">Privacy</Link>
-          <Link href="/terms">Terms</Link>
-          <Link href="/support">Support</Link>
+          <Link href="/privacy">الخصوصية</Link>
+          <Link href="/terms">الشروط</Link>
+          <Link href="/support">الدعم</Link>
         </div>
-        <p>© 2026 TL3B. All rights reserved.</p>
+        <p>© 2026 تلعب. جميع الحقوق محفوظة.</p>
       </footer>
     </main>
   );

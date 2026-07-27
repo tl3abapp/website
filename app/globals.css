@@ -31,7 +31,10 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  direction: rtl;
+  font-family:
+    var(--font-geist-sans), "Geeza Pro", Tahoma, Arial, Helvetica, sans-serif;
+  text-align: right;
 }
 
 a {
@@ -97,7 +100,7 @@ a {
   color: var(--green);
   font-size: 13px;
   font-weight: 900;
-  letter-spacing: 0.12em;
+  letter-spacing: 0;
   margin: 0 0 14px;
   text-transform: uppercase;
 }
@@ -182,6 +185,76 @@ h1 {
   align-items: center;
   display: flex;
   justify-content: center;
+}
+
+.brand-showcase {
+  background:
+    radial-gradient(circle at 50% 35%, rgba(183, 255, 26, 0.18), transparent 34%),
+    #030504;
+  border: 1px solid rgba(183, 255, 26, 0.18);
+  border-radius: 42px;
+  box-shadow: 0 34px 90px rgba(7, 19, 14, 0.22);
+  overflow: hidden;
+  padding: clamp(22px, 4vw, 44px);
+  position: relative;
+  width: min(520px, 100%);
+}
+
+.full-logo {
+  border-radius: 28px;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.mini-app-card {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(183, 255, 26, 0.26);
+  border-radius: 24px;
+  display: flex;
+  gap: 18px;
+  justify-content: space-between;
+  margin-top: -18px;
+  padding: 20px;
+  position: relative;
+}
+
+.mini-app-card span {
+  background: var(--mint);
+  border-radius: 999px;
+  color: var(--green);
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  padding: 7px 12px;
+}
+
+.mini-app-card strong {
+  display: block;
+  font-size: 24px;
+  font-weight: 950;
+  margin-bottom: 6px;
+}
+
+.mini-app-card p {
+  color: #5b6961;
+  font-size: 14px;
+  font-weight: 750;
+  margin: 0;
+}
+
+.mini-app-card button {
+  background: var(--forest);
+  border: 0;
+  border-radius: 16px;
+  color: var(--white);
+  font: inherit;
+  font-weight: 850;
+  min-height: 46px;
+  padding: 0 20px;
 }
 
 .phone-shell {
@@ -319,6 +392,7 @@ h1 {
 
 .intro-band,
 .privacy-preview,
+.delete-section,
 .release-section {
   align-items: center;
   background: var(--white);
@@ -421,6 +495,45 @@ h1 {
   grid-template-columns: 1fr auto;
 }
 
+.delete-section {
+  background: #fffdf3;
+  border-color: rgba(245, 200, 75, 0.5);
+  grid-template-columns: 1fr auto;
+}
+
+.delete-section h2 {
+  font-size: clamp(34px, 5vw, 56px);
+  font-weight: 950;
+  line-height: 1;
+}
+
+.delete-section p {
+  color: #58675e;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.delete-steps {
+  background: var(--ink);
+  border-radius: 24px;
+  color: var(--white);
+  display: grid;
+  gap: 9px;
+  min-width: 260px;
+  padding: 24px;
+}
+
+.delete-steps span {
+  color: var(--lime);
+  font-size: 13px;
+  font-weight: 950;
+}
+
+.delete-steps strong {
+  font-size: 18px;
+  font-weight: 900;
+}
+
 .release-section {
   background: var(--ink);
   color: var(--white);
@@ -428,6 +541,7 @@ h1 {
 }
 
 .release-section img {
+  border-radius: 28px;
   height: auto;
   max-width: 230px;
 }
@@ -519,6 +633,7 @@ h1 {
   .hero-section,
   .intro-band,
   .privacy-preview,
+  .delete-section,
   .release-section {
     grid-template-columns: 1fr;
   }
@@ -540,6 +655,7 @@ h1 {
 
   .intro-band,
   .privacy-preview,
+  .delete-section,
   .release-section {
     border-radius: 26px;
     margin-left: 24px;
@@ -567,6 +683,17 @@ h1 {
   .phone-shell {
     border-radius: 34px;
     padding: 18px;
+  }
+
+  .brand-showcase {
+    border-radius: 30px;
+    padding: 18px;
+  }
+
+  .mini-app-card {
+    align-items: stretch;
+    flex-direction: column;
+    margin-top: 12px;
   }
 
   .welcome-panel span {

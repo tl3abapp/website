@@ -2,54 +2,49 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Support | TL3B",
-  description: "Get support for TL3B.",
+  title: "الدعم | تلعب",
+  description: "الدعم وطريقة حذف الحساب في تطبيق تلعب.",
 };
 
 const supportItems = [
   {
-    title: "Account help",
-    text: "Get help with login, profile details, privacy settings, and account deletion.",
+    title: "مساعدة الحساب",
+    text: "تسجيل الدخول، الملف الشخصي، إعدادات الخصوصية، وتعديل بيانات الحساب.",
   },
   {
-    title: "Match issues",
-    text: "Report problems with creating games, requests, invitations, player replacement, or reminders.",
+    title: "مشاكل المباريات",
+    text: "إنشاء مباراة، الدعوات، طلبات الانضمام، تبديل لاعب، أو تنبيهات الوقت.",
   },
   {
-    title: "Safety and privacy",
-    text: "Ask questions about visibility, notifications, uploaded photos, and your data.",
+    title: "الخصوصية والأمان",
+    text: "ظهور البيانات، الإشعارات، الصور المرفوعة، وحذف الحساب أو البيانات.",
   },
 ];
 
 export default function SupportPage() {
   return (
     <main>
-      <nav className="site-nav legal-nav" aria-label="Main navigation">
+      <nav className="site-nav legal-nav" aria-label="التنقل الرئيسي">
         <Link className="brand-link" href="/">
-          <Image
-            src="/tl3b-icon.png"
-            width={48}
-            height={48}
-            alt="TL3B app icon"
-          />
-          <span>TL3B?</span>
+          <Image src="/tl3b-icon.png" width={48} height={48} alt="أيقونة تلعب" />
+          <span>تلعب؟</span>
         </Link>
         <div className="nav-links">
-          <Link href="/">Home</Link>
-          <Link href="/privacy">Privacy</Link>
-          <Link href="/terms">Terms</Link>
+          <Link href="/">الرئيسية</Link>
+          <Link href="/privacy">الخصوصية</Link>
+          <Link href="/terms">الشروط</Link>
         </div>
       </nav>
 
       <section className="support-hero">
-        <p className="eyebrow">Support</p>
-        <h1>We are here to help with TL3B.</h1>
+        <p className="eyebrow">الدعم</p>
+        <h1>نساعدك في أي مشكلة داخل تلعب.</h1>
         <p>
-          Send us the email connected to your account, a short description of
-          the issue, and screenshots if they help explain what happened.
+          أرسل لنا البريد المرتبط بحسابك، شرح مختصر للمشكلة، وصور توضيحية إذا
+          كانت تساعد. فريق الدعم يراجع الطلب ويرد عليك بأقرب وقت ممكن.
         </p>
         <a className="primary-action" href="mailto:support@tl3ab.app">
-          Email support@tl3ab.app
+          راسل support@tl3ab.app
         </a>
       </section>
 
@@ -62,17 +57,37 @@ export default function SupportPage() {
         ))}
       </section>
 
+      <section className="section delete-section">
+        <div>
+          <p className="eyebrow">طريقة حذف الحساب</p>
+          <h2>من داخل التطبيق</h2>
+          <p>
+            افتح تلعب، ادخل على الملف الشخصي، اختر الإعدادات، ثم الحساب، واضغط
+            حذف الحساب. بعد التأكيد يبدأ طلب حذف الحساب والبيانات المرتبطة به.
+          </p>
+        </div>
+        <div className="delete-steps">
+          <span>١</span>
+          <strong>الملف الشخصي</strong>
+          <span>٢</span>
+          <strong>الإعدادات</strong>
+          <span>٣</span>
+          <strong>الحساب ثم حذف الحساب</strong>
+        </div>
+      </section>
+
       <section className="section privacy-preview">
         <div>
-          <p className="eyebrow">For store review</p>
-          <h2>Official TL3B policy links.</h2>
+          <p className="eyebrow">إذا ما تقدر تدخل للتطبيق</p>
+          <h2>اطلب الحذف عن طريق البريد.</h2>
           <p>
-            Use these pages for App Store and Google Play release information.
+            راسلنا من البريد المسجل في حسابك على support@tl3ab.app، واكتب اسم
+            المستخدم أو رقم الهاتف المرتبط بالحساب حتى نتحقق من الطلب.
           </p>
         </div>
         <div className="policy-links">
-          <Link href="/privacy">Privacy Policy</Link>
-          <Link href="/terms">Terms of Use</Link>
+          <Link href="/privacy">سياسة الخصوصية</Link>
+          <Link href="/terms">شروط الاستخدام</Link>
         </div>
       </section>
     </main>

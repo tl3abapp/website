@@ -2,90 +2,81 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Terms of Use | TL3B",
-  description: "Terms of Use for TL3B.",
+  title: "شروط الاستخدام | تلعب",
+  description: "شروط استخدام تطبيق تلعب.",
 };
 
 export default function TermsPage() {
   return (
     <main>
-      <nav className="site-nav legal-nav" aria-label="Main navigation">
+      <nav className="site-nav legal-nav" aria-label="التنقل الرئيسي">
         <Link className="brand-link" href="/">
-          <Image
-            src="/tl3b-icon.png"
-            width={48}
-            height={48}
-            alt="TL3B app icon"
-          />
-          <span>TL3B?</span>
+          <Image src="/tl3b-icon.png" width={48} height={48} alt="أيقونة تلعب" />
+          <span>تلعب؟</span>
         </Link>
         <div className="nav-links">
-          <Link href="/">Home</Link>
-          <Link href="/privacy">Privacy</Link>
-          <Link href="/support">Support</Link>
+          <Link href="/">الرئيسية</Link>
+          <Link href="/privacy">الخصوصية</Link>
+          <Link href="/support">الدعم</Link>
         </div>
       </nav>
 
       <article className="legal-page">
-        <p className="eyebrow">Last updated July 26, 2026</p>
-        <h1>Terms of Use</h1>
+        <p className="eyebrow">آخر تحديث: ٢٧ يوليو ٢٠٢٦</p>
+        <h1>شروط الاستخدام</h1>
         <p className="legal-lead">
-          These terms explain the rules for using TL3B. By using the app or
-          website, you agree to use the service responsibly.
+          هذه الشروط توضح قواعد استخدام تلعب. باستخدامك للتطبيق أو الموقع، فإنك
+          توافق على استخدام الخدمة بطريقة مسؤولة.
         </p>
 
         <section>
-          <h2>Using TL3B</h2>
+          <h2>استخدام تلعب</h2>
           <p>
-            TL3B lets players create games, invite others, request to join
-            public matches, manage participants, post in the community, and chat
-            around match activity. You are responsible for the accuracy of the
-            information you provide.
+            يتيح لك تلعب إنشاء مباريات، دعوة لاعبين، طلب الانضمام للمباريات
+            العامة، إدارة المشاركين، النشر في المجتمع، والتواصل حول المباريات.
+            أنت مسؤول عن صحة المعلومات التي تقدمها.
           </p>
         </section>
 
         <section>
-          <h2>Accounts and conduct</h2>
+          <h2>الحساب والسلوك</h2>
           <p>
-            Keep your account secure and do not use another person&apos;s
-            account. Do not harass, impersonate, spam, upload harmful content,
-            or use TL3B in a way that disrupts other players or the service.
+            حافظ على أمان حسابك ولا تستخدم حساب شخص آخر. يمنع التحرش،
+            الانتحال، الرسائل المزعجة، رفع محتوى ضار، أو استخدام تلعب بطريقة
+            تضر اللاعبين أو الخدمة.
           </p>
         </section>
 
         <section>
-          <h2>Matches and safety</h2>
+          <h2>المباريات والسلامة</h2>
           <p>
-            Hosts and players are responsible for confirming court bookings,
-            payments, attendance, and any real-world arrangements. TL3B helps
-            coordinate games but does not operate courts or guarantee player
-            attendance.
+            الهوست واللاعبون مسؤولون عن تأكيد حجز الملعب، الدفع، الحضور، وأي
+            ترتيبات واقعية أخرى. تلعب يساعد على التنسيق ولا يدير الملاعب أو
+            يضمن حضور اللاعبين.
           </p>
         </section>
 
         <section>
-          <h2>Content</h2>
+          <h2>المحتوى</h2>
           <p>
-            You keep ownership of content you submit, such as posts, messages,
-            profile photos, and booking images. You give TL3B permission to
-            store, display, and process that content as needed to operate the
-            service.
+            أنت تملك المحتوى الذي ترفعه مثل المنشورات، الرسائل، الصور الشخصية،
+            وصور الحجوزات. أنت تمنح تلعب إذنًا لحفظ وعرض ومعالجة هذا المحتوى
+            بما يلزم لتشغيل الخدمة.
           </p>
         </section>
 
         <section>
-          <h2>Service changes</h2>
+          <h2>تغيير الخدمة</h2>
           <p>
-            We may update, improve, pause, or remove parts of the service. We
-            may also suspend accounts that violate these terms or create risk
-            for other users.
+            قد نقوم بتحديث أو تحسين أو إيقاف أجزاء من الخدمة. وقد نعلق الحسابات
+            التي تخالف هذه الشروط أو تسبب خطرًا على المستخدمين.
           </p>
         </section>
 
         <section>
-          <h2>Contact</h2>
+          <h2>التواصل</h2>
           <p>
-            For questions about these terms, contact{" "}
+            لأي سؤال عن هذه الشروط، تواصل معنا عبر{" "}
             <a href="mailto:support@tl3ab.app">support@tl3ab.app</a>.
           </p>
         </section>
