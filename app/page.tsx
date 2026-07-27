@@ -156,7 +156,7 @@ export default function Home() {
           <p>
             من داخل التطبيق ادخل على الملف الشخصي، ثم الإعدادات، ثم الحساب،
             واختر حذف الحساب. إذا ما قدرت تدخل للتطبيق، راسلنا من بريدك
-            المسجل على support@tl3ab.app واكتب طلب حذف الحساب.
+            المسجل على support@til3b.com واكتب طلب حذف الحساب.
           </p>
         </div>
         <Link className="secondary-action compact" href="/support">

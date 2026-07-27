@@ -85,7 +85,7 @@ export default function PrivacyPage() {
           </p>
           <p>
             إذا لم تستطع الدخول للتطبيق، أرسل طلب حذف الحساب إلى{" "}
-            <a href="mailto:support@tl3ab.app">support@tl3ab.app</a> من البريد
+            <a href="mailto:support@til3b.com">support@til3b.com</a> من البريد
             المسجل في حسابك، مع كتابة اسم المستخدم أو رقم الهاتف المرتبط بالحساب
             حتى نتمكن من التحقق من الطلب.
           </p>
@@ -107,7 +107,7 @@ export default function PrivacyPage() {
           <h2>التواصل</h2>
           <p>
             لأي سؤال بخصوص الخصوصية أو حذف البيانات، تواصل معنا عبر{" "}
-            <a href="mailto:support@tl3ab.app">support@tl3ab.app</a>.
+            <a href="mailto:support@til3b.com">support@til3b.com</a>.
           </p>
         </section>
       </article>

@@ -48,7 +48,7 @@ test("server-renders release policy pages", async () => {
   const pages = [
     ["/privacy", /سياسة الخصوصية/, /حذف الحساب والبيانات/],
     ["/terms", /شروط الاستخدام/, /المباريات والسلامة/],
-    ["/support", /راسل support@tl3ab\.app/, /طريقة حذف الحساب/],
+    ["/support", /راسل support@til3b\.com/, /طريقة حذف الحساب/],
   ];
 
   for (const [path, heading, content] of pages) {

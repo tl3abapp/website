@@ -43,8 +43,8 @@ export default function SupportPage() {
           أرسل لنا البريد المرتبط بحسابك، شرح مختصر للمشكلة، وصور توضيحية إذا
           كانت تساعد. فريق الدعم يراجع الطلب ويرد عليك بأقرب وقت ممكن.
         </p>
-        <a className="primary-action" href="mailto:support@tl3ab.app">
-          راسل support@tl3ab.app
+        <a className="primary-action" href="mailto:support@til3b.com">
+          راسل support@til3b.com
         </a>
       </section>
 
@@ -81,7 +81,7 @@ export default function SupportPage() {
           <p className="eyebrow">إذا ما تقدر تدخل للتطبيق</p>
           <h2>اطلب الحذف عن طريق البريد.</h2>
           <p>
-            راسلنا من البريد المسجل في حسابك على support@tl3ab.app، واكتب اسم
+            راسلنا من البريد المسجل في حسابك على support@til3b.com، واكتب اسم
             المستخدم أو رقم الهاتف المرتبط بالحساب حتى نتحقق من الطلب.
           </p>
         </div>

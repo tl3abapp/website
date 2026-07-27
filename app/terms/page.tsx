@@ -77,7 +77,7 @@ export default function TermsPage() {
           <h2>التواصل</h2>
           <p>
             لأي سؤال عن هذه الشروط، تواصل معنا عبر{" "}
-            <a href="mailto:support@tl3ab.app">support@tl3ab.app</a>.
+            <a href="mailto:support@til3b.com">support@til3b.com</a>.
           </p>
         </section>
       </article>
