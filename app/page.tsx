@@ -37,6 +37,7 @@ export default function Home() {
             height={54}
             alt="أيقونة تطبيق تلعب"
             priority
+            unoptimized
           />
           <span>تلعب؟</span>
         </Link>
@@ -78,6 +79,7 @@ export default function Home() {
               height={720}
               alt="شعار تلعب"
               priority
+              unoptimized
               className="full-logo"
             />
             <div className="mini-app-card">
@@ -170,6 +172,7 @@ export default function Home() {
           width={260}
           height={260}
           alt="شعار تلعب"
+          unoptimized
         />
         <div>
           <h2>تلعب على iOS و Android والويب.</h2>
@@ -182,7 +185,7 @@ export default function Home() {
 
       <footer className="site-footer">
         <Link className="brand-link footer-brand" href="/">
-          <Image src="/tl3b-icon.png" width={42} height={42} alt="" />
+          <Image src="/tl3b-icon.png" width={42} height={42} alt="" unoptimized />
           <span>تلعب؟</span>
         </Link>
         <div>

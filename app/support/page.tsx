@@ -26,7 +26,13 @@ export default function SupportPage() {
     <main>
       <nav className="site-nav legal-nav" aria-label="التنقل الرئيسي">
         <Link className="brand-link" href="/">
-          <Image src="/tl3b-icon.png" width={48} height={48} alt="أيقونة تلعب" />
+          <Image
+            src="/tl3b-icon.png"
+            width={48}
+            height={48}
+            alt="أيقونة تلعب"
+            unoptimized
+          />
           <span>تلعب؟</span>
         </Link>
         <div className="nav-links">
