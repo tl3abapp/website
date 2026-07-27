@@ -122,13 +122,12 @@ function LegalNav() {
     <nav className="site-nav legal-nav" aria-label="التنقل الرئيسي">
       <Link className="brand-link" href="/">
         <Image
-          src="/tl3b-icon.png"
-          width={48}
-          height={48}
-          alt="أيقونة تلعب"
+          src="/tl3b-full-logo.png"
+          width={96}
+          height={96}
+          alt="شعار تلعب"
           unoptimized
         />
-        <span>تلعب؟</span>
       </Link>
       <div className="nav-links">
         <Link href="/">الرئيسية</Link>

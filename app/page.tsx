@@ -32,14 +32,13 @@ export default function Home() {
       <nav className="site-nav" aria-label="التنقل الرئيسي">
         <Link className="brand-link" href="/">
           <Image
-            src="/tl3b-icon.png"
-            width={54}
-            height={54}
-            alt="أيقونة تطبيق تلعب"
+            src="/tl3b-full-logo.png"
+            width={96}
+            height={96}
+            alt="شعار تلعب"
             priority
             unoptimized
           />
-          <span>تلعب؟</span>
         </Link>
         <div className="nav-links">
           <a href="#features">المميزات</a>
@@ -185,8 +184,13 @@ export default function Home() {
 
       <footer className="site-footer">
         <Link className="brand-link footer-brand" href="/">
-          <Image src="/tl3b-icon.png" width={42} height={42} alt="" unoptimized />
-          <span>تلعب؟</span>
+          <Image
+            src="/tl3b-full-logo.png"
+            width={86}
+            height={86}
+            alt="شعار تلعب"
+            unoptimized
+          />
         </Link>
         <div>
           <Link href="/privacy">الخصوصية</Link>

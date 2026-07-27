@@ -10,8 +10,8 @@
   --lime: #b7ff1a;
   --amber: #f5c84b;
   --white: #ffffff;
-  --brand-font: "Arial Rounded MT Bold", "Avenir Next", "DIN Alternate",
-    "Geeza Pro", Tahoma, Arial, sans-serif;
+  --brand-font: "DIN Next LT Arabic", "SF Arabic", "Dubai", "Tajawal",
+    "Avenir Next", "Geeza Pro", Tahoma, Arial, sans-serif;
 }
 
 @theme inline {
@@ -61,13 +61,14 @@ a {
 .brand-link {
   align-items: center;
   display: inline-flex;
-  gap: 12px;
-  font-size: 24px;
-  font-weight: 900;
+  height: 72px;
 }
 
 .brand-link img {
-  border-radius: 15px;
+  border-radius: 18px;
+  height: 72px;
+  object-fit: cover;
+  width: 72px;
 }
 
 .nav-links {
@@ -581,6 +582,11 @@ h1 {
 
 .footer-brand span {
   color: var(--ink);
+}
+
+.footer-brand img {
+  height: 64px;
+  width: 64px;
 }
 
 .legal-nav {

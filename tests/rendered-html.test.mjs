@@ -39,7 +39,6 @@ test("server-renders the TL3B home page", async () => {
   assert.match(html, /\/privacy/);
   assert.match(html, /\/terms/);
   assert.match(html, /\/support/);
-  assert.match(html, /tl3b-icon\.png/);
   assert.match(html, /tl3b-full-logo\.png/);
   assert.doesNotMatch(html, /Codex is building|react-loading-skeleton/i);
 });
